@@ -1,6 +1,6 @@
 function Herozinho() {
     return (
-        <div className="bg-[url('/images/bg.png')] bg-cover bg-center lg:w-[1280px] lg:h-[984px] @md:w-[393px]     ">
+        <div className="bg-[url('/images/bg.png')] bg-cover bg-center lg:w-[1280px] lg:h-[984px] md:w-[393px] overflow-x-hidden overflow-y-hidden">
             <span className=" flex flex-col max-w[528px] p-[187.5px] justify-center items-center">
                 <span className="flex flex-row justify-center items-center gap-2.5 pb-6">
                     <img className="max-w-[160px]" src="\images\8d1e7a913cdd1dec86e6b1beb28a973ffe6345d7.png" />
@@ -10,22 +10,24 @@ function Herozinho() {
                     <p className="text-base font-semibold pb-5">E-mail ou usuário</p>
                     <input type="text"
                     placeholder="E-mail ou usuário"
-                    className="input border-r-[12px] w-full p-3 rounded border border-gray-300 text-white "/>
+                    className="input border w-full p-3 rounded-2xl border-gray-300 text-white "/>
                     <p className="text-base font-semibold pt-5 pb-5">Senha</p>
                     <input type="text"
                     placeholder="Senha"
-                    className="input border-r-[12px] w-full p-3 rounded border border-gray-300 text-white "/>
+                    className="input border w-full p-3 rounded-2xl border-gray-300 text-white "/>
                     <label class="flex items-center space-x-2 cursor-pointer pt-4 pb-12">
                         <input type="checkbox" class=" w-4 h-4"/>
                         <span class="font-semibold text-[12px] select-none">Lembrar senha</span>
                     </label>
+                    <a href="/app" className="w-[528px] no-underline decoration-white">    
                     <div className="cursor-pointer w-full rounded-xl items-center flex justify-center h-12 opacity-90 bg-[#FAAE2B] font-bold">Login
                         <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M15 3.5H19C19.5304 3.5 20.0391 3.71071 20.4142 4.08579C20.7893 4.46086 21 4.96957 21 5.5V19.5C21 20.0304 20.7893 20.5391 20.4142 20.9142C20.0391 21.2893 19.5304 21.5 19 21.5H15M10 17.5L15 12.5M15 12.5L10 7.5M15 12.5H3" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </div>
+                    </a>
                     <label className="flex justify-center items-center w-[528px] p-5">
-                    <a href="#"className="text-white underline-offset-1">
+                    <a href="/test"className="text-white underline-offset-1">
                     Esqueceu a senha?
                     </a>
                     </label>
